@@ -23,7 +23,7 @@
         <Label Content="Telek első száma (0-1):" HorizontalAlignment="Left" Margin="10,52,0,0" VerticalAlignment="Top"  RenderTransformOrigin="0.587,0.586" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Left" Margin="107,104,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286" Height="26" Name="telekszelesseg" Grid.Column="1" TextChanged="telekszelesseg_TextChanged"/>
         <Label Content="Telek mérete (8-20):" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"  RenderTransformOrigin="0.587,0.586" Grid.ColumnSpan="2"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="525,52,26,115" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Margin="525,52,26,202" Grid.Column="1" Grid.ColumnSpan="2" Name="házak" SelectionChanged="házak_SelectionChanged"/>
         <Label Content="Kerítés színe (r,g,b,#,:):" HorizontalAlignment="Left" Margin="10,156,0,0" VerticalAlignment="Top"  RenderTransformOrigin="0.587,0.586" Grid.ColumnSpan="2"/>
         <TextBox HorizontalAlignment="Left" Margin="107,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286" Height="26" x:Name="keritesszine" TextChanged="keritesszine_TextChanged" Grid.Column="1"/>
         <Button Content="Ellenörzés" HorizontalAlignment="Left" Margin="442,55,0,0" VerticalAlignment="Top" Name="telekellenorzes" Click="telekellenorzes_Click" Grid.Column="1"/>
@@ -33,5 +33,10 @@
         <TextBlock HorizontalAlignment="Left" Margin="398,104,0,0" TextWrapping="Wrap" Text="✔️" VerticalAlignment="Top" Height="26" Width="25" FontSize="19" Foreground="Green" x:Name="telekmeretjelez" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="398,52,0,0" TextWrapping="Wrap" Text="✔️" VerticalAlignment="Top" Height="26" Width="25" FontSize="19" Foreground="Green" x:Name="telekelsoszamjelez" Grid.Column="1"/>
         <Button Grid.Column="1" Content="Button" HorizontalAlignment="Left" Margin="190,235,0,0" VerticalAlignment="Top" Height="91" Width="180" Click="Button_Click" Name="beadas" IsEnabled="False"/>
+        <TextBlock Text="0" Grid.Column="1" HorizontalAlignment="Left" Margin="525,31,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Grid.ColumnSpan="2" Width="195" Name="eladotthazakszama"/>
+        <Label Content="Utcakep" HorizontalAlignment="Left" Margin="26,366,0,0" VerticalAlignment="Top" Width="527" Grid.ColumnSpan="2" Name="utcakep" FontSize="20"/>
+        <Label Content="Utcakép:" HorizontalAlignment="Left" Margin="27,339,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" FontSize="13" Name="utcakepmutat"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="525,244,0,0" TextWrapping="Wrap" Text="Ajánlott csereszinek: " VerticalAlignment="Top" RenderTransformOrigin="-0.007,-0.582" Grid.ColumnSpan="2"/>
+        <ListBox Grid.Column="1" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="525,269,26,19" Grid.ColumnSpan="2" Name="valaszthatoszinek2"/>
     </Grid>
 </Window>
